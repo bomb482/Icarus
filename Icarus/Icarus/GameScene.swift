@@ -94,7 +94,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scoreLabel.fontName = "Courier-Bold"
         scoreLabel.fontSize = 200
         scoreLabel.fontColor = .white
+        scoreLabel.zPosition = 2
         addChild(scoreLabel)
+        
     }
     
     private func spawnOneSetOfObstacles() {
