@@ -29,11 +29,12 @@ enum GamePosition: CGFloat {
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
-    let obstacleLeftTexture_Level1 = Textures.textures.texturesAtlas.textureNamed("obstacleLeft_Level1")
-    let obstacleRightTexture_Level1 = Textures.textures.texturesAtlas.textureNamed("obstacleRight_Level1")
+    let obstacleLeftTexture_Level1 = SKTexture(imageNamed: "obstacleRight_Level1")
+    let obstacleRightTexture_Level1 = SKTexture(imageNamed: "obstacleRight_Level1")
     var obstacleGap: CGFloat = 200.0
     var obstacles = SKNode()
     
+    let motorcycleTexture = SKTexture(imageNamed: "")
     let square = SKSpriteNode(color: .red, size: CGSize(width: 50, height: 50))
     
     var score = 0
@@ -51,6 +52,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var playing = false
     var falling = false
     var gameOverScreen = false
+    var settingsScreen = false
     
     private func initWorld() {
         self.physicsWorld.contactDelegate = self
@@ -99,6 +101,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
     }
     
+    private func initSettingsButton() {
+        let button = SKSpriteNode(imageNamed: "settings_icon.png")
+        button.position = CGPoint(x: frame.minX+button.size.width, y: frame.maxY-button.size.height)
+        addChild(button)
+        button.name = "Button"
+        button.isUserInteractionEnabled = true
+    }
+    
     private func spawnOneSetOfObstacles() {
         
         let width = UInt32(self.frame.width / 5)
@@ -126,6 +136,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 $0.contactTestBitMask = PhysicalObject.PLAYER
             }
         }
+        obstacleRight.setScale(-1)
         
         let scoringBox = SKShapeNode(rectOf: CGSize(width: obstacleGap, height: 50)).then {
             $0.fillColor = .green
@@ -163,6 +174,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func setScene() {
         initWalls()
         initPlayer()
+        initSettingsButton()
     }
     
     override func didMove(to view: SKView) {
@@ -190,14 +202,28 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
         
         for touch in touches {
-            if (menuScreen) {
+            let location = touch.location(in: self)
+            let node = self.atPoint(location)
+            if (node.name == "Button" && !settingsScreen) {
+                menuScreen = false
+                playing = false
+                gameOverScreen = false
+                settingsScreen = true
+            }
+            if (node.name == "Button" && settingsScreen) {
+                menuScreen = true
+                playing = false
+                gameOverScreen = false
+                settingsScreen = false
+            }
+            else if (menuScreen) {
                 menuScreen = false
                 playing = true
                 initScoreLabel()
                 spawnObstaclesLevelOne()
             }
             else if (playing) {
-                let location = touch.location(in: self)
+                
                   
                 if location.x >= self.frame.midX {
                     velocityTouch += 400
