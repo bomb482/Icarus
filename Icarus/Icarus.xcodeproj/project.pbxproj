@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB928ADC296E44E5002A9C14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB928ADB296E44E5002A9C14 /* AppDelegate.swift */; };
+		CB928ADE296E44E5002A9C14 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CB928ADD296E44E5002A9C14 /* GameScene.sks */; };
+		CB928AE0296E44E5002A9C14 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CB928ADF296E44E5002A9C14 /* Actions.sks */; };
+		CB928AE2296E44E5002A9C14 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB928AE1296E44E5002A9C14 /* GameScene.swift */; };
+		CB928AE4296E44E5002A9C14 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB928AE3296E44E5002A9C14 /* GameViewController.swift */; };
+		CB928AE7296E44E5002A9C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB928AE5296E44E5002A9C14 /* Main.storyboard */; };
+		CB928AE9296E44E8002A9C14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB928AE8296E44E8002A9C14 /* Assets.xcassets */; };
+		CB928AEC296E44E8002A9C14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB928AEA296E44E8002A9C14 /* LaunchScreen.storyboard */; };
+		CB928AF6296E44E8002A9C14 /* IcarusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB928AF5296E44E8002A9C14 /* IcarusTests.swift */; };
+		CB928B00296E44E8002A9C14 /* IcarusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB928AFF296E44E8002A9C14 /* IcarusUITests.swift */; };
+		CB928B02296E44E8002A9C14 /* IcarusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB928B01296E44E8002A9C14 /* IcarusUITestsLaunchTests.swift */; };
+		CB928B10296F93CA002A9C14 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB928B0F296F93CA002A9C14 /* Then.swift */; };
+		CB928B122970F725002A9C14 /* Textures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB928B112970F725002A9C14 /* Textures.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB928AF2296E44E8002A9C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB928AD0296E44E5002A9C14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB928AD7296E44E5002A9C14;
+			remoteInfo = Icarus;
+		};
+		CB928AFC296E44E8002A9C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB928AD0296E44E5002A9C14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB928AD7296E44E5002A9C14;
+			remoteInfo = Icarus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB928AD8296E44E5002A9C14 /* Icarus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Icarus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB928ADB296E44E5002A9C14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB928ADD296E44E5002A9C14 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		CB928ADF296E44E5002A9C14 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		CB928AE1296E44E5002A9C14 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CB928AE3296E44E5002A9C14 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CB928AE6296E44E5002A9C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB928AE8296E44E8002A9C14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB928AEB296E44E8002A9C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB928AF1296E44E8002A9C14 /* IcarusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IcarusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB928AF5296E44E8002A9C14 /* IcarusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcarusTests.swift; sourceTree = "<group>"; };
+		CB928AFB296E44E8002A9C14 /* IcarusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IcarusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB928AFF296E44E8002A9C14 /* IcarusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcarusUITests.swift; sourceTree = "<group>"; };
+		CB928B01296E44E8002A9C14 /* IcarusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcarusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB928B0F296F93CA002A9C14 /* Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		CB928B112970F725002A9C14 /* Textures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textures.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB928AD5296E44E5002A9C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB928AEE296E44E8002A9C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB928AF8296E44E8002A9C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB928ACF296E44E5002A9C14 = {
+			isa = PBXGroup;
+			children = (
+				CB928ADA296E44E5002A9C14 /* Icarus */,
+				CB928AF4296E44E8002A9C14 /* IcarusTests */,
+				CB928AFE296E44E8002A9C14 /* IcarusUITests */,
+				CB928AD9296E44E5002A9C14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB928AD9296E44E5002A9C14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB928AD8296E44E5002A9C14 /* Icarus.app */,
+				CB928AF1296E44E8002A9C14 /* IcarusTests.xctest */,
+				CB928AFB296E44E8002A9C14 /* IcarusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB928ADA296E44E5002A9C14 /* Icarus */ = {
+			isa = PBXGroup;
+			children = (
+				CB928B0E296F93B2002A9C14 /* Support */,
+				CB928ADB296E44E5002A9C14 /* AppDelegate.swift */,
+				CB928ADD296E44E5002A9C14 /* GameScene.sks */,
+				CB928ADF296E44E5002A9C14 /* Actions.sks */,
+				CB928AE1296E44E5002A9C14 /* GameScene.swift */,
+				CB928AE3296E44E5002A9C14 /* GameViewController.swift */,
+				CB928AE5296E44E5002A9C14 /* Main.storyboard */,
+				CB928AE8296E44E8002A9C14 /* Assets.xcassets */,
+				CB928AEA296E44E8002A9C14 /* LaunchScreen.storyboard */,
+				CB928B112970F725002A9C14 /* Textures.swift */,
+			);
+			path = Icarus;
+			sourceTree = "<group>";
+		};
+		CB928AF4296E44E8002A9C14 /* IcarusTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB928AF5296E44E8002A9C14 /* IcarusTests.swift */,
+			);
+			path = IcarusTests;
+			sourceTree = "<group>";
+		};
+		CB928AFE296E44E8002A9C14 /* IcarusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB928AFF296E44E8002A9C14 /* IcarusUITests.swift */,
+				CB928B01296E44E8002A9C14 /* IcarusUITestsLaunchTests.swift */,
+			);
+			path = IcarusUITests;
+			sourceTree = "<group>";
+		};
+		CB928B0E296F93B2002A9C14 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CB928B0F296F93CA002A9C14 /* Then.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB928AD7296E44E5002A9C14 /* Icarus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB928B05296E44E8002A9C14 /* Build configuration list for PBXNativeTarget "Icarus" */;
+			buildPhases = (
+				CB928AD4296E44E5002A9C14 /* Sources */,
+				CB928AD5296E44E5002A9C14 /* Frameworks */,
+				CB928AD6296E44E5002A9C14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Icarus;
+			productName = Icarus;
+			productReference = CB928AD8296E44E5002A9C14 /* Icarus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB928AF0296E44E8002A9C14 /* IcarusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB928B08296E44E8002A9C14 /* Build configuration list for PBXNativeTarget "IcarusTests" */;
+			buildPhases = (
+				CB928AED296E44E8002A9C14 /* Sources */,
+				CB928AEE296E44E8002A9C14 /* Frameworks */,
+				CB928AEF296E44E8002A9C14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB928AF3296E44E8002A9C14 /* PBXTargetDependency */,
+			);
+			name = IcarusTests;
+			productName = IcarusTests;
+			productReference = CB928AF1296E44E8002A9C14 /* IcarusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB928AFA296E44E8002A9C14 /* IcarusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB928B0B296E44E8002A9C14 /* Build configuration list for PBXNativeTarget "IcarusUITests" */;
+			buildPhases = (
+				CB928AF7296E44E8002A9C14 /* Sources */,
+				CB928AF8296E44E8002A9C14 /* Frameworks */,
+				CB928AF9296E44E8002A9C14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB928AFD296E44E8002A9C14 /* PBXTargetDependency */,
+			);
+			name = IcarusUITests;
+			productName = IcarusUITests;
+			productReference = CB928AFB296E44E8002A9C14 /* IcarusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB928AD0296E44E5002A9C14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					CB928AD7296E44E5002A9C14 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					CB928AF0296E44E8002A9C14 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = CB928AD7296E44E5002A9C14;
+					};
+					CB928AFA296E44E8002A9C14 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = CB928AD7296E44E5002A9C14;
+					};
+				};
+			};
+			buildConfigurationList = CB928AD3296E44E5002A9C14 /* Build configuration list for PBXProject "Icarus" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB928ACF296E44E5002A9C14;
+			productRefGroup = CB928AD9296E44E5002A9C14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB928AD7296E44E5002A9C14 /* Icarus */,
+				CB928AF0296E44E8002A9C14 /* IcarusTests */,
+				CB928AFA296E44E8002A9C14 /* IcarusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB928AD6296E44E5002A9C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB928AE7296E44E5002A9C14 /* Main.storyboard in Resources */,
+				CB928ADE296E44E5002A9C14 /* GameScene.sks in Resources */,
+				CB928AE9296E44E8002A9C14 /* Assets.xcassets in Resources */,
+				CB928AEC296E44E8002A9C14 /* LaunchScreen.storyboard in Resources */,
+				CB928AE0296E44E5002A9C14 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB928AEF296E44E8002A9C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB928AF9296E44E8002A9C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB928AD4296E44E5002A9C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB928AE2296E44E5002A9C14 /* GameScene.swift in Sources */,
+				CB928B122970F725002A9C14 /* Textures.swift in Sources */,
+				CB928B10296F93CA002A9C14 /* Then.swift in Sources */,
+				CB928AE4296E44E5002A9C14 /* GameViewController.swift in Sources */,
+				CB928ADC296E44E5002A9C14 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB928AED296E44E8002A9C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB928AF6296E44E8002A9C14 /* IcarusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB928AF7296E44E8002A9C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB928B00296E44E8002A9C14 /* IcarusUITests.swift in Sources */,
+				CB928B02296E44E8002A9C14 /* IcarusUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB928AF3296E44E8002A9C14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB928AD7296E44E5002A9C14 /* Icarus */;
+			targetProxy = CB928AF2296E44E8002A9C14 /* PBXContainerItemProxy */;
+		};
+		CB928AFD296E44E8002A9C14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB928AD7296E44E5002A9C14 /* Icarus */;
+			targetProxy = CB928AFC296E44E8002A9C14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB928AE5296E44E5002A9C14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB928AE6296E44E5002A9C14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB928AEA296E44E8002A9C14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB928AEB296E44E8002A9C14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB928B03296E44E8002A9C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB928B04296E44E8002A9C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB928B06296E44E8002A9C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GUPCKUY739;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = braymond.Icarus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB928B07296E44E8002A9C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GUPCKUY739;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = braymond.Icarus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB928B09296E44E8002A9C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 428CS333J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aleeckman.IcarusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Icarus.app/Icarus";
+			};
+			name = Debug;
+		};
+		CB928B0A296E44E8002A9C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 428CS333J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aleeckman.IcarusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Icarus.app/Icarus";
+			};
+			name = Release;
+		};
+		CB928B0C296E44E8002A9C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 428CS333J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aleeckman.IcarusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Icarus;
+			};
+			name = Debug;
+		};
+		CB928B0D296E44E8002A9C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 428CS333J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aleeckman.IcarusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Icarus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB928AD3296E44E5002A9C14 /* Build configuration list for PBXProject "Icarus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB928B03296E44E8002A9C14 /* Debug */,
+				CB928B04296E44E8002A9C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB928B05296E44E8002A9C14 /* Build configuration list for PBXNativeTarget "Icarus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB928B06296E44E8002A9C14 /* Debug */,
+				CB928B07296E44E8002A9C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB928B08296E44E8002A9C14 /* Build configuration list for PBXNativeTarget "IcarusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB928B09296E44E8002A9C14 /* Debug */,
+				CB928B0A296E44E8002A9C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB928B0B296E44E8002A9C14 /* Build configuration list for PBXNativeTarget "IcarusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB928B0C296E44E8002A9C14 /* Debug */,
+				CB928B0D296E44E8002A9C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB928AD0296E44E5002A9C14 /* Project object */;
+}
